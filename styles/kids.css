@@ -1,3 +1,479 @@
-.school{
-    display: flex;
+
+.inter-normal {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    max-width: 1160px;
+  }
+  
+  .width {
+    width: 62px;
+  }
+  
+  .first {
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+  }
+  
+  .school {
+    display: flex;
+    align-items: center;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    padding: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .yellow {
+    color: #fea301;
+  }
+  
+  .sky-blue {
+    color: #00a6eb;
+  }
+  
+  .sky {
+    color: #05d4df;
+  }
+  
+  .purple {
+    color: #5d58ef;
+  }
+  
+  .btn-primary {
+    background-color: #fea301;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Banner Section */
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
+  
+  .banner-title {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .banner-content {
+    max-width: 640px;
+    text-align: center;
+  }
+  
+  .orange {
+    color: #fea301;
+  }
+  
+  .btn-second {
+    color: #ffffff;
+    background-color: black;
+    border-radius: 12px;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .banner-profile {
+    width: 100%;
+    max-width: 468px;
+  }
+  
+  /* Main Section */
+  main {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  /* Standard Curriculum Section */
+  .standard {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .standard-title {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill {
+    background: linear-gradient(#def5ff, #ffffff);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .skill img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .skill-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .skill-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  div a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fea301;
+  }
+  .gradient-1 {
+    background: linear-gradient(#def5ff, #ffffff);
+  }
+  
+  .gradient-2 {
+    background: linear-gradient(#fff4dc, #ffffff);
+  }
+  
+  .gradient-3 {
+    background: linear-gradient(#f2e8ff, #ffffff);
+  }
+.link-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    width: 60px;
+    height: 60px;
+    color: #000000;
+    background-color: #FEA301;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.story-grid {
+    background: linear-gradient(#FFFFFF, #feae0189);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 15px;
+    align-items: start;
+}
+
+.story-item {
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.story-item.large {
+    grid-column: span 2;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.story-item:not(.large) {
+    width: 290px;
+}
+
+.date-button1 {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-250%, -250%);
+    background-color: #3CD8E8;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 47px;
+    font-weight: bold;
+    width: 174px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-button-2 {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-150%, -145%);
+    background-color: #95B226;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 47px;
+    font-weight: bold;
+    width: 174px;
+    height:38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-button-3 {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-150%, -145%);
+    background-color: #5D58F0;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 47px;
+    font-weight: bold;
+    width: 174px;
+    height:38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-button-4 {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-150%, -145%);
+    background-color: #95B226;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 47px;
+    font-weight: bold;
+    width: 174px;
+    height:38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-button-5 {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-150%, -145%);
+    background-color: #3CD8E8;
+    color: #FFFFFF;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 47px;
+    font-weight: bold;
+    width: 174px;
+    height:38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date-button1:hover {
+    background-color: #e8983c;
+}
+
+.date-button2:hover {
+    background-color: #5D58EF;
+}
+
+.date-button3:hover {
+    background-color: #05D4DF;
+}
+
+.date-button4:hover {
+    background-color: #000000;
+}
+
+.date-button5:hover {
+    background-color: orangered;
+}
+.story-content {
+    padding: 15px;
+}
+
+.story-content h4 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.story-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.story-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+/*button last*/
+.last-1{text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    align-items: center;
+}
+/*footer section*/
+.footer-container {
+    background-color: #00aaff;
+    padding: 40px 20px;
+    color: white;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-1 {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.school .logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.school .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.school .description {
+    font-size: 14px;
+    line-height: 1.6;
+}
+.links {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 8px;
+}
+
+.links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+}
+.contact {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+}
+
+.contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+
